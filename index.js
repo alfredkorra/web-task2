@@ -24,7 +24,7 @@ axios(url)
 
     
     console.log(teasers);
-  })
+  }).catch((err) => console.log(err))
 
+  app.listen(port, () => console.log(`listening on port ${port}`));
   
-  .catch((err) => console.log(err));
